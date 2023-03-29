@@ -1,0 +1,164 @@
+.title {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+
+  color: #fff;
+}
+
+.table_wrap {
+  margin-top: 32px;
+  overflow-x: auto;
+  /*  width: calc(100% - 60px); */
+}
+
+.table {
+  min-width: 1000px;
+  max-width: 100%;
+  width: 100%;
+
+  border-collapse: collapse;
+}
+
+.table thead {
+  background: #192152;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 120%;
+
+  color: #ffffff;
+}
+
+.table thead th {
+  padding: 20px;
+  width: 250px;
+  font-size: 18px;
+  box-sizing: border-box;
+  text-align: left;
+}
+.table thead th:last-child,
+.table thead th:nth-child(1) {
+  padding: 10px;
+  width: 20px;
+  text-align: center;
+}
+
+.table tbody tr td:nth-child(4) {
+  text-align: left;
+}
+.table tbody tr {
+  position: relative;
+  border-bottom: 2px solid #00072d;
+}
+.table tbody tr:last-child {
+  border-bottom: none;
+}
+.table tbody td:first-child {
+  text-align: center;
+}
+.table tbody td {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+
+  color: #ffffff;
+  padding: 10px 20px;
+}
+.contact2 {
+  padding-top: 0;
+}
+.pagination {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+}
+.contact tbody td:has(svg) {
+  cursor: pointer;
+}
+.title_wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.title_wrap div {
+  width: 30%;
+
+  background: #192152;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+}
+.title_wrap input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #c4c4c4;
+  font-size: 20px;
+  width: 100%;
+}
+.title_wrap svg {
+  color: #c4c4c4;
+  font-size: 20px;
+  margin-right: 2px;
+}
+@media screen and (max-width: 991.9px) {
+  .contact {
+    padding-right: 54px;
+    padding-top: 1rem;
+  }
+  .title_wrap div {
+    width: 32%;
+  }
+  .title_wrap svg,
+  .title_wrap input {
+    font-size: 16px;
+  }
+  .table tbody td{
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .contact {
+    padding-top: 0;
+  }
+  .title {
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .contact,
+  .table_wrap {
+    margin-top: 1rem;
+  }
+  .contact tbody td {
+    font-size: 14px;
+    margin-top: 1rem;
+  }
+  .contact .table thead th {
+    font-size: 16px;
+  }
+  .title_wrap div {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .title_wrap {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .title{
+    margin-bottom: 1rem;
+  }
+  .title_wrap div{
+    width: 100%;
+  }
+}

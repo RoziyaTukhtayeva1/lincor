@@ -1,0 +1,31 @@
+.body {
+  background-color: #222235;
+  border-radius: 20px;
+  padding: 32px;
+}
+
+.title {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+
+  color: #fff;
+}
+
+@media screen and (max-width: 991.9px) {
+  .body {
+    padding: 1rem;
+    width: calc(100% - 54px);
+  }
+  .title{
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 0) and (max-width: 449.9px) {
+  .body{
+    display: none;
+  }
+}
